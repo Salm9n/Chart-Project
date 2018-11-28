@@ -28,69 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BarGraphButton = new System.Windows.Forms.Button();
+            this.LineGraphButton = new System.Windows.Forms.Button();
+            this.PieGraphButton = new System.Windows.Forms.Button();
+            this.PlotGraphButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // BarGraphButton
             // 
-            this.button1.Location = new System.Drawing.Point(108, 222);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Chart 1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BarGraphButton.Location = new System.Drawing.Point(82, 219);
+            this.BarGraphButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BarGraphButton.Name = "BarGraphButton";
+            this.BarGraphButton.Size = new System.Drawing.Size(72, 19);
+            this.BarGraphButton.TabIndex = 0;
+            this.BarGraphButton.Text = "Bar Graph";
+            this.BarGraphButton.UseVisualStyleBackColor = true;
+            this.BarGraphButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // LineGraphButton
             // 
-            this.button2.Location = new System.Drawing.Point(384, 222);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Chart 2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.LineGraphButton.Location = new System.Drawing.Point(234, 219);
+            this.LineGraphButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LineGraphButton.Name = "LineGraphButton";
+            this.LineGraphButton.Size = new System.Drawing.Size(72, 19);
+            this.LineGraphButton.TabIndex = 1;
+            this.LineGraphButton.Text = "Line Graph";
+            this.LineGraphButton.UseVisualStyleBackColor = true;
+            this.LineGraphButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // PieGraphButton
             // 
-            this.button3.Location = new System.Drawing.Point(706, 222);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Chart 3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.PieGraphButton.Location = new System.Drawing.Point(630, 219);
+            this.PieGraphButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PieGraphButton.Name = "PieGraphButton";
+            this.PieGraphButton.Size = new System.Drawing.Size(72, 19);
+            this.PieGraphButton.TabIndex = 2;
+            this.PieGraphButton.Text = "Pie Graph";
+            this.PieGraphButton.UseVisualStyleBackColor = true;
+            this.PieGraphButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // PlotGraphButton
             // 
-            this.button4.Location = new System.Drawing.Point(982, 222);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Chart 4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.PlotGraphButton.Location = new System.Drawing.Point(775, 219);
+            this.PlotGraphButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PlotGraphButton.Name = "PlotGraphButton";
+            this.PlotGraphButton.Size = new System.Drawing.Size(72, 19);
+            this.PlotGraphButton.TabIndex = 3;
+            this.PlotGraphButton.Text = "Plot Graph";
+            this.PlotGraphButton.UseVisualStyleBackColor = true;
+            this.PlotGraphButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(486, 29);
+            this.label1.Location = new System.Drawing.Point(364, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 44);
+            this.label1.Size = new System.Drawing.Size(173, 36);
             this.label1.TabIndex = 4;
             this.label1.Text = "Chart Portal";
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(547, 368);
+            this.button5.Location = new System.Drawing.Point(451, 296);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(56, 19);
             this.button5.TabIndex = 5;
             this.button5.Text = "Exit";
             this.button5.UseVisualStyleBackColor = true;
@@ -98,15 +104,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1252, 450);
+            this.ClientSize = new System.Drawing.Size(939, 366);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PlotGraphButton);
+            this.Controls.Add(this.PieGraphButton);
+            this.Controls.Add(this.LineGraphButton);
+            this.Controls.Add(this.BarGraphButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -116,10 +123,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BarGraphButton;
+        private System.Windows.Forms.Button LineGraphButton;
+        private System.Windows.Forms.Button PieGraphButton;
+        private System.Windows.Forms.Button PlotGraphButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
     }

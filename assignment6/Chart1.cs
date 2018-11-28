@@ -15,23 +15,28 @@ namespace assignment6
     public partial class Chart1 : Form
     {
         protected Form1 CallingForm;
-        private List<int> years;
-        private List<int> fga;
+        private List<double> years;
+        private List<double> threePA;
+
         public Chart1(Form1 form)
         {
             InitializeComponent();
             this.CallingForm = form;
             this.StartPosition = FormStartPosition.CenterScreen;
-            //years = this.CallingForm.Years;
-            //fga = this.CallingForm.Fga;
+
+            years = new List<double>();
+            threePA = new List<double>();
+
+            years = this.CallingForm.Years;
+            threePA = this.CallingForm.ThreePA;
         }
 
         private void Chart1_Load(object sender, EventArgs e)
         {
-            chart2.Series.Add("Ah");
-            /*Chart chart1 = new Chart();
-            ChartArea area = new ChartArea("First");
-            chart1.ChartAreas.Add(area); */
+            for (int i = 0; i < years.Count; i++)
+            {
+                BarGraph.Series["3PA"].Points.AddXY(years[i], threePA[i]);
+            }
         }
     }
 }
