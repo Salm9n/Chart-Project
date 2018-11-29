@@ -28,51 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            this.PlotGraph = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.PlotGraph)).BeginInit();
             this.SuspendLayout();
             // 
-            // chart1
+            // PlotGraph
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(12, 12);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(810, 337);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            title1.Name = "Title1";
-            title1.Text = "IDK WHAT TO PUT HERE";
-            this.chart1.Titles.Add(title1);
+            chartArea2.Name = "ChartArea1";
+            this.PlotGraph.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.PlotGraph.Legends.Add(legend2);
+            this.PlotGraph.Location = new System.Drawing.Point(16, 15);
+            this.PlotGraph.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlotGraph.Name = "PlotGraph";
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Color = System.Drawing.Color.Navy;
+            series5.Legend = "Legend1";
+            series5.Name = "Pacers";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Color = System.Drawing.Color.Gold;
+            series6.Legend = "Legend1";
+            series6.Name = "Warriors";
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Color = System.Drawing.Color.Maroon;
+            series7.Legend = "Legend1";
+            series7.Name = "Cavs";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Color = System.Drawing.Color.Red;
+            series8.Legend = "Legend1";
+            series8.Name = "Bulls";
+            this.PlotGraph.Series.Add(series5);
+            this.PlotGraph.Series.Add(series6);
+            this.PlotGraph.Series.Add(series7);
+            this.PlotGraph.Series.Add(series8);
+            this.PlotGraph.Size = new System.Drawing.Size(1080, 415);
+            this.PlotGraph.TabIndex = 0;
+            this.PlotGraph.Text = "chart1";
+            title2.Name = "Title1";
+            title2.Text = "IDK WHAT TO PUT HERE";
+            this.PlotGraph.Titles.Add(title2);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(508, 451);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Return";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Chart4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 361);
-            this.Controls.Add(this.chart1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(1112, 486);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PlotGraph);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Chart4";
             this.Text = "Chart4";
             this.Load += new System.EventHandler(this.Chart4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlotGraph)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart PlotGraph;
+        private System.Windows.Forms.Button button1;
     }
 }

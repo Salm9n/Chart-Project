@@ -22,7 +22,7 @@ namespace assignment6
         {
             InitializeComponent();
             this.CallingForm = form;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;    //center 
 
             years = new List<double>();
             threePA = new List<double>();
@@ -35,8 +35,16 @@ namespace assignment6
         {
             for (int i = 0; i < years.Count; i++)
             {
-                BarGraph.Series["3PA"].Points.AddXY(years[i], threePA[i]);
+                BarGraph.Series["3PA"].Points.AddXY(years[i], threePA[i]);  //adding data to chart 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form F1 = new Form1();
+            F1.Show();
+            
         }
     }
 }

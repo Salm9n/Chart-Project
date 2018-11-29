@@ -22,7 +22,7 @@ namespace assignment6
         {
             InitializeComponent();
             this.CallingForm = form;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;    //center 
 
             titleTeams = new List<string>();
             titleCount = new List<double>();
@@ -36,14 +36,21 @@ namespace assignment6
             double total = titleCount.Sum();
             for (int i = 0; i < titleTeams.Count; i++)
             {
-                PieGraph.Series["Titles"].Points.AddXY(titleCount[i], titleCount[i]/total);
+                PieGraph.Series["Titles"].Points.AddXY(titleCount[i], titleCount[i]/total);     //adding data 
                 PieGraph.Series["Titles"].Points[i].LegendText = titleTeams[i] + " - " + titleCount[i];
             }
 
             foreach (DataPoint p in PieGraph.Series["Titles"].Points)
             {
-                p.Label = "#PERCENT";
+                p.Label = "#PERCENT";   //label 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form F1 = new Form1();
+            F1.Show();
         }
     }
 }
