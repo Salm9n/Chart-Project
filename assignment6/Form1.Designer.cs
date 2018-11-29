@@ -38,10 +38,10 @@
             // 
             // BarGraphButton
             // 
-            this.BarGraphButton.Location = new System.Drawing.Point(82, 219);
-            this.BarGraphButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BarGraphButton.Location = new System.Drawing.Point(47, 270);
+            this.BarGraphButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BarGraphButton.Name = "BarGraphButton";
-            this.BarGraphButton.Size = new System.Drawing.Size(72, 19);
+            this.BarGraphButton.Size = new System.Drawing.Size(96, 23);
             this.BarGraphButton.TabIndex = 0;
             this.BarGraphButton.Text = "Bar Graph";
             this.BarGraphButton.UseVisualStyleBackColor = true;
@@ -49,10 +49,10 @@
             // 
             // LineGraphButton
             // 
-            this.LineGraphButton.Location = new System.Drawing.Point(234, 219);
-            this.LineGraphButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LineGraphButton.Location = new System.Drawing.Point(312, 270);
+            this.LineGraphButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LineGraphButton.Name = "LineGraphButton";
-            this.LineGraphButton.Size = new System.Drawing.Size(72, 19);
+            this.LineGraphButton.Size = new System.Drawing.Size(96, 23);
             this.LineGraphButton.TabIndex = 1;
             this.LineGraphButton.Text = "Line Graph";
             this.LineGraphButton.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@
             // 
             // PieGraphButton
             // 
-            this.PieGraphButton.Location = new System.Drawing.Point(630, 219);
-            this.PieGraphButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PieGraphButton.Location = new System.Drawing.Point(811, 270);
+            this.PieGraphButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PieGraphButton.Name = "PieGraphButton";
-            this.PieGraphButton.Size = new System.Drawing.Size(72, 19);
+            this.PieGraphButton.Size = new System.Drawing.Size(96, 23);
             this.PieGraphButton.TabIndex = 2;
             this.PieGraphButton.Text = "Pie Graph";
             this.PieGraphButton.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@
             // 
             // PlotGraphButton
             // 
-            this.PlotGraphButton.Location = new System.Drawing.Point(775, 219);
-            this.PlotGraphButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PlotGraphButton.Location = new System.Drawing.Point(1015, 270);
+            this.PlotGraphButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlotGraphButton.Name = "PlotGraphButton";
-            this.PlotGraphButton.Size = new System.Drawing.Size(72, 19);
+            this.PlotGraphButton.Size = new System.Drawing.Size(96, 23);
             this.PlotGraphButton.TabIndex = 3;
             this.PlotGraphButton.Text = "Plot Graph";
             this.PlotGraphButton.UseVisualStyleBackColor = true;
@@ -84,19 +84,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(364, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(485, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 36);
+            this.label1.Size = new System.Drawing.Size(223, 44);
             this.label1.TabIndex = 4;
             this.label1.Text = "Chart Portal";
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(451, 296);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Location = new System.Drawing.Point(555, 374);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(56, 19);
+            this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 5;
             this.button5.Text = "Exit";
             this.button5.UseVisualStyleBackColor = true;
@@ -104,16 +103,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 366);
+            this.ClientSize = new System.Drawing.Size(1252, 450);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PlotGraphButton);
             this.Controls.Add(this.PieGraphButton);
             this.Controls.Add(this.LineGraphButton);
             this.Controls.Add(this.BarGraphButton);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

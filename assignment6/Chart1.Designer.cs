@@ -33,6 +33,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.BarGraph = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BarGraph)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,14 +45,14 @@
             this.BarGraph.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.BarGraph.Legends.Add(legend1);
-            this.BarGraph.Location = new System.Drawing.Point(11, 11);
-            this.BarGraph.Margin = new System.Windows.Forms.Padding(2);
+            this.BarGraph.Location = new System.Drawing.Point(15, 14);
+            this.BarGraph.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BarGraph.Name = "BarGraph";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "3PA";
             this.BarGraph.Series.Add(series1);
-            this.BarGraph.Size = new System.Drawing.Size(812, 339);
+            this.BarGraph.Size = new System.Drawing.Size(1083, 417);
             this.BarGraph.TabIndex = 0;
             this.BarGraph.Text = "3-Point Attempts";
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
@@ -59,13 +60,24 @@
             title1.Text = "Three Point Attempts in NBA";
             this.BarGraph.Titles.Add(title1);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(486, 457);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Return";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Chart1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 361);
+            this.ClientSize = new System.Drawing.Size(1113, 503);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BarGraph);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Chart1";
             this.Text = "Chart1";
             this.Load += new System.EventHandler(this.Chart1_Load);
@@ -77,5 +89,6 @@
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart BarGraph;
+        private System.Windows.Forms.Button button1;
     }
 }
