@@ -1,4 +1,16 @@
-﻿using System;
+﻿/*****************************************
+ * 
+ *  Programmers: Salman Mohammed, Ryne Heron
+ * 
+ *       Course: CSCI 473
+ * 
+ *   Assignment: 6
+ *         Date: November 29, 2018
+ * 
+ *****************************************/
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +36,8 @@ namespace assignment6
             this.CallingForm = form;
             this.StartPosition = FormStartPosition.CenterScreen;    //center 
 
+            this.FormClosing += Form_FormClosing;
+
             titleTeams = new List<string>();
             titleCount = new List<double>();
 
@@ -46,11 +60,31 @@ namespace assignment6
             }
         }
 
+
+        /******************************************
+         * button1_Click()
+         * 
+         * Purpose: Goes back to the Chart Portal
+         *
+         * ***************************************/
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form F1 = new Form1();
             F1.Show();
+        }
+
+
+        /******************************************
+         * Form_FormClosing()
+         * 
+         * Purpose: Closes the entire application
+         *  when the user clicks the x in the corner
+         *
+         * ***************************************/
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
