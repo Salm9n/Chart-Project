@@ -39,7 +39,8 @@ namespace assignment6
         public Form1()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;    //center 
+            this.StartPosition = FormStartPosition.CenterScreen;    //center
+            this.FormClosing += Form_FormClosing;
 
             years = new List<double>();
             years2 = new List<double>();
@@ -111,6 +112,10 @@ namespace assignment6
             set { bulls = value; }
         }
 
+
+
+
+        //BarGraph
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -119,6 +124,7 @@ namespace assignment6
             
         }
 
+        //LineGraph
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -127,6 +133,7 @@ namespace assignment6
             
         }
 
+        //PieGraph
         private void button3_Click(object sender, EventArgs e)      //when buttons clicked take to form 
         {
             this.Hide();
@@ -135,6 +142,8 @@ namespace assignment6
            
         }
 
+
+        //SplineGraph
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -143,6 +152,7 @@ namespace assignment6
             
         }
 
+        //exit button
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -153,6 +163,7 @@ namespace assignment6
         *   readData()
         *   
         *   Purpose: Read data with 3 fields 
+        *       (string, List<double>, List<double>)
         * 
         **************************************************/
         private void readData(string path, List<double> xValues, List<double> yValues)
@@ -173,12 +184,12 @@ namespace assignment6
         }
 
         /***************************************************
-      * 
-      *   readData()
-      *   
-      *   Purpose: Read data with 6 fields 
-      * 
-      **************************************************/
+        * 
+        *   readData()
+        *   
+        *   Purpose: Read data with 6 fields 
+        * 
+        **************************************************/
         private void readData(string path, List<double> xValues, List<int> yValues, List<int> moreValues, List<int> mostValues, List<int> mostestValues)
         {
             string line;
@@ -203,7 +214,9 @@ namespace assignment6
         * 
         *   readData()
         *   
-        *   Purpose: Read data with 3 fields 
+        *   Purpose: Read data with 3 fields
+        *       (string, List<string>, List<double>)
+        *   
         * 
         **************************************************/
         private void readData(string path, List<string> xValues, List<double> yValues)
@@ -221,6 +234,18 @@ namespace assignment6
             }
 
             file.Close();
+        }
+
+        /******************************************
+         * Form_FormClosing()
+         * 
+         * Purpose: Closes the entire application
+         *  when the user clicks the x in the corner
+         *
+         * ***************************************/
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
